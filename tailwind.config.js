@@ -1,17 +1,16 @@
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
-import colors from 'tailwindcss/colors';
-import defaultTheme from 'tailwindcss/defaultTheme';
+
 
 export default {
   content: ['./index.html', './src/**/*.{html,jsx,js}'],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      ffontFamily: {
+        sans: ['Roboto','sans-serif'],
       },
-      colors: {
-        indigo: colors.blue,
+      gridTemplateColumns: {
+        '70/30': '70% 28%',
       },
     },
   },
